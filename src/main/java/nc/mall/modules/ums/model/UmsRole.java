@@ -15,8 +15,6 @@ import lombok.EqualsAndHashCode;
  * 后台用户角色表
  * </p>
  *
- * @author macro
- * @since 2020-08-21
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

@@ -19,7 +19,6 @@ import java.util.Scanner;
 
 /**
  * MyBatisPlus代码生成器
- * Created by macro on 2020/8/20.
  */
 public class MyBatisPlusGenerator {
 
@@ -60,7 +59,7 @@ public class MyBatisPlusGenerator {
     private static GlobalConfig initGlobalConfig(String projectPath) {
         GlobalConfig globalConfig = new GlobalConfig();
         globalConfig.setOutputDir(projectPath + "/src/main/java");
-        globalConfig.setAuthor("macro");
+        globalConfig.setAuthor("linc");
         globalConfig.setOpen(false);
         globalConfig.setSwagger2(true);
         globalConfig.setBaseResultMap(true);
