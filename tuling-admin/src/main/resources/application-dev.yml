@@ -17,10 +17,10 @@ logging:
 
 aliyun:
   oss:
-    endpoint: oss-cn-chengdu.aliyuncs.com # oss对外服务的访问域名
+    endpoint: oss-cn-shenzhen.aliyuncs.com # oss对外服务的访问域名
     accessKeyId: xxx # 访问身份验证中用到用户标识
     accessKeySecret: xxx # 用户用于加密签名字符串和oss用来验证签名字符串的密钥
-    bucketName: tulingmall-xushu # oss的存储空间
+    bucketName: nc-mall # oss的存储空间
     policy:
       expire: 300 # 签名有效期(S)
     maxSize: 10 # 上传文件大小(M)

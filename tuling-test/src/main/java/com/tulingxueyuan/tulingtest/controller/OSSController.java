@@ -27,7 +27,7 @@ public class OSSController {
         String accessId = "xxx"; // 请填写您的AccessKeyId。
         String accessKey = "xxx"; // 请填写您的AccessKeySecret。
         String endpoint = "oss-cn-chengdu.aliyuncs.com"; // 请填写您的 endpoint。
-        String bucket = "tulingmall-xushu"; // 请填写您的 bucketname 。
+        String bucket = "nc-mall"; // 请填写您的 bucketname 。
         String host = "https://" + bucket + "." + endpoint; // host的格式为 bucketname.endpoint
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
