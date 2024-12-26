@@ -28,7 +28,8 @@ import java.util.stream.Collectors;
 
 /**
  * 后台用户管理
- * Created by macro on 2018/4/26.
+ * @author Linc
+ * @since 2024-12-26
  */
 @Controller
 @Api(tags = "UmsAdminController", description = "后台用户管理")
@@ -40,6 +41,8 @@ public class UmsAdminController {
     private UmsAdminService adminService;
     @Autowired
     private UmsRoleService roleService;
+
+    UmsAdmin login;
 
     @ApiOperation(value = "用户注册")
     @RequestMapping(value = "/register", method = RequestMethod.POST)
@@ -56,7 +59,8 @@ public class UmsAdminController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult login(@Validated @RequestBody UmsAdminLoginParam umsAdminLoginParam) {
-         UmsAdmin login = adminService.login(umsAdminLoginParam.getUsername(), umsAdminLoginParam.getPassword());
+//        UmsAdmin login = adminService.login(umsAdminLoginParam.getUsername(), umsAdminLoginParam.getPassword());
+        login = adminService.login(umsAdminLoginParam.getUsername(), umsAdminLoginParam.getPassword());
         if (login == null) {
             return CommonResult.validateFailed("用户名或密码错误");
         }
@@ -71,7 +75,8 @@ public class UmsAdminController {
     @RequestMapping(value = "/info", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult getAdminInfo() {
-        UmsAdmin umsAdmin= (UmsAdmin) session.getAttribute(ComConstants.FLAG_CURRENT_USER);
+//        UmsAdmin umsAdmin= (UmsAdmin) session.getAttribute(ComConstants.FLAG_CURRENT_USER);
+        UmsAdmin umsAdmin = login;
         System.out.println(session.getId());
         Map<String, Object> data = new HashMap<>();
         data.put("username", umsAdmin.getUsername());

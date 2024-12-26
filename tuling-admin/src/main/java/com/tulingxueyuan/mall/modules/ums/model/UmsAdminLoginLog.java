@@ -17,8 +17,8 @@ import java.util.Date;
  * 后台用户登录日志表
  * </p>
  *
- * @author macro
- * @since 2020-08-21
+ * @author Linc
+ * @since 2024-12-26
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

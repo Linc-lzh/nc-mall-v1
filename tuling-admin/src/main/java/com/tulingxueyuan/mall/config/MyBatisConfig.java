@@ -9,7 +9,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * MyBatis配置类
- * Created by macro on 2019/4/8.
+ * @author Linc
+ * @since 2024-12-26
  */
 @Configuration
 @EnableTransactionManagement

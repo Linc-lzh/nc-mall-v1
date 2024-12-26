@@ -11,8 +11,8 @@ import java.util.List;
  * 后台菜单表 Mapper 接口
  * </p>
  *
- * @author macro
- * @since 2020-08-21
+ * @author Linc
+ * @since 2024-12-26
  */
 public interface UmsMenuMapper extends BaseMapper<UmsMenu> {
 

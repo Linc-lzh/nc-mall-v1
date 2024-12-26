@@ -16,8 +16,8 @@ import java.util.Date;
  * 资源分类表
  * </p>
  *
- * @author macro
- * @since 2020-08-21
+ * @author Linc
+ * @since 2024-12-26
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

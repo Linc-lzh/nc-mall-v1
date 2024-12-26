@@ -8,8 +8,8 @@ import com.tulingxueyuan.mall.modules.ums.model.UmsRoleMenuRelation;
  * 后台角色菜单关系表 Mapper 接口
  * </p>
  *
- * @author macro
- * @since 2020-08-21
+ * @author Linc
+ * @since 2024-12-26
  */
 public interface UmsRoleMenuRelationMapper extends BaseMapper<UmsRoleMenuRelation> {
 

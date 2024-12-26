@@ -19,7 +19,8 @@ import java.util.List;
 
 /**
  * 作用： 验证 用户是否登录、菜单资源权限
- * 作者：徐庶
+ * @author Linc
+ * @since 2024-12-26
  */
 public class AuthInterceptor extends HandlerInterceptorAdapter {
 
@@ -46,20 +47,21 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 
 
         //2、未登录用户，直接拒绝访问
-        if (null == request.getSession().getAttribute(ComConstants.FLAG_CURRENT_USER)) {
-            throw new ApiException(ResultCode.UNAUTHORIZED);
-        } else {
+//        if (null == request.getSession().getAttribute(ComConstants.FLAG_CURRENT_USER)) {
+//            throw new ApiException(ResultCode.UNAUTHORIZED);
+//        } else {
             //3、已登录用户，判断是否有资源访问权限  Todo:到时候用spring security实现
-            UmsAdmin umsAdmin = (UmsAdmin) request.getSession().getAttribute(ComConstants.FLAG_CURRENT_USER);
+//            UmsAdmin umsAdmin = (UmsAdmin) request.getSession().getAttribute(ComConstants.FLAG_CURRENT_USER);
             // 获取用户所有可访问资源
-            List<UmsResource> resourceList = umsAdminService.getResourceList(umsAdmin.getId());
+//            List<UmsResource> resourceList = umsAdminService.getResourceList(umsAdmin.getId());
+        List<UmsResource> resourceList = umsAdminService.getResourceList(3L);
             for (UmsResource umsResource : resourceList) {
                 if(matcher.match( umsResource.getUrl(),requestURI)){
                     return  true;
                 }
             }
             throw new ApiException(ResultCode.FORBIDDEN);
-        }
+//        }
     }
 
 

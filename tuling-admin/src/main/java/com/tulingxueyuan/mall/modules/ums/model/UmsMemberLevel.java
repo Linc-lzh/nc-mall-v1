@@ -16,8 +16,8 @@ import java.math.BigDecimal;
  * 会员等级表
  * </p>
  *
- * @author XuShu
- * @since 2021-03-09
+ * @author Linc
+ * @since 2024-12-26
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

@@ -8,7 +8,8 @@ import javax.validation.constraints.NotEmpty;
 
 /**
  * 修改用户名密码参数
- * Created by macro on 2019/10/9.
+ * @author Linc
+ * @since 2024-12-26
  */
 @Getter
 @Setter

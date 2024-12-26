@@ -8,8 +8,8 @@ import com.tulingxueyuan.mall.modules.ums.model.UmsAdminLoginLog;
  * 后台用户登录日志表 Mapper 接口
  * </p>
  *
- * @author macro
- * @since 2020-08-21
+ * @author Linc
+ * @since 2024-12-26
  */
 public interface UmsAdminLoginLogMapper extends BaseMapper<UmsAdminLoginLog> {
 

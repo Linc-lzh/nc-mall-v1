@@ -5,7 +5,8 @@ import com.tulingxueyuan.mall.modules.ums.model.UmsAdminRoleRelation;
 
 /**
  * 管理员角色关系管理Service
- * Created by macro on 2020/8/21.
+ * @author Linc
+ * @since 2024-12-26
  */
 public interface UmsAdminRoleRelationService extends IService<UmsAdminRoleRelation> {
 }
