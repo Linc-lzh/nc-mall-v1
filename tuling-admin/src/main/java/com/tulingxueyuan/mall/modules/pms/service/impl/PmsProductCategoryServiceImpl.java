@@ -47,10 +47,18 @@ public class PmsProductCategoryServiceImpl extends ServiceImpl<PmsProductCategor
      */
     @Override
     public boolean updateNavStatus(List<Long> ids, Integer navStatus) {
-
         UpdateWrapper<PmsProductCategory> pmsProductCategoryUpdateWrapper = new UpdateWrapper<>();
         pmsProductCategoryUpdateWrapper.lambda()
                 .set(PmsProductCategory::getNavStatus, navStatus)
+                .in(PmsProductCategory::getId, ids);
+        return this.update(pmsProductCategoryUpdateWrapper);
+    }
+
+    @Override
+    public boolean updateShowStatus(List<Long> ids, Integer showStatus) {
+        UpdateWrapper<PmsProductCategory> pmsProductCategoryUpdateWrapper = new UpdateWrapper<>();
+        pmsProductCategoryUpdateWrapper.lambda()
+                .set(PmsProductCategory::getShowStatus, showStatus)
                 .in(PmsProductCategory::getId, ids);
         return this.update(pmsProductCategoryUpdateWrapper);
     }

@@ -26,6 +26,13 @@ public class PmsProductCategoryController {
     @Autowired
     PmsProductCategoryService productCategoryService;
 
+    /**
+     * get list of product by id
+     * @param parentId
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
     @RequestMapping(value = "/list/{parentId}", method = RequestMethod.GET)
     public CommonResult<CommonPage<PmsProductCategory>> getList(@PathVariable Long parentId,
                                                                 @RequestParam(value="pageNum", defaultValue = "1") Integer pageNum,
@@ -34,10 +41,50 @@ public class PmsProductCategoryController {
         return CommonResult.success(CommonPage.restPage(page));
     }
 
+    /**
+     * Update navigate status for product
+     * @param ids
+     * @param navStatus
+     * @return
+     */
     @RequestMapping(value = "/update/navStatus", method = RequestMethod.POST)
     public CommonResult updateNavStatus(@RequestParam(value="ids") List<Long> ids,
                                         @RequestParam(value="navStatus") Integer navStatus) {
         boolean result = productCategoryService.updateNavStatus(ids, navStatus);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else {
+            return CommonResult.failed();
+        }
+    }
+
+    /**
+     * Update show status for product
+     * @param ids
+     * @param showStatus
+     * @return
+     */
+    @RequestMapping(value = "/update/showStatus", method = RequestMethod.POST)
+    public CommonResult updateShowStatus(@RequestParam(value="ids") List<Long> ids,
+                                        @RequestParam(value="showStatus") Integer showStatus) {
+        boolean result = productCategoryService.updateShowStatus(ids, showStatus);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else {
+            return CommonResult.failed();
+        }
+    }
+
+    /**
+     * Delete product category
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
+    public CommonResult delete(@PathVariable Long id) {
+        boolean result = productCategoryService.removeById(id);
         if(result){
             return CommonResult.success(result);
         }
