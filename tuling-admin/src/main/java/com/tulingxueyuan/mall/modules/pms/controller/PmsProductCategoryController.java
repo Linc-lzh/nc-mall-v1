@@ -28,6 +28,7 @@ public class PmsProductCategoryController {
 
     /**
      * get list of product by id
+     *
      * @param parentId
      * @param pageNum
      * @param pageSize
@@ -35,60 +36,103 @@ public class PmsProductCategoryController {
      */
     @RequestMapping(value = "/list/{parentId}", method = RequestMethod.GET)
     public CommonResult<CommonPage<PmsProductCategory>> getList(@PathVariable Long parentId,
-                                                                @RequestParam(value="pageNum", defaultValue = "1") Integer pageNum,
-                                                                @RequestParam(value="pageSize", defaultValue = "5") Integer pageSize) {
+                                                                @RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
+                                                                @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize) {
         Page page = productCategoryService.list(parentId, pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(page));
     }
 
     /**
      * Update navigate status for product
+     *
      * @param ids
      * @param navStatus
      * @return
      */
     @RequestMapping(value = "/update/navStatus", method = RequestMethod.POST)
-    public CommonResult updateNavStatus(@RequestParam(value="ids") List<Long> ids,
-                                        @RequestParam(value="navStatus") Integer navStatus) {
+    public CommonResult updateNavStatus(@RequestParam(value = "ids") List<Long> ids,
+                                        @RequestParam(value = "navStatus") Integer navStatus) {
         boolean result = productCategoryService.updateNavStatus(ids, navStatus);
-        if(result){
+        if (result) {
             return CommonResult.success(result);
-        }
-        else {
+        } else {
             return CommonResult.failed();
         }
     }
 
     /**
      * Update show status for product
+     *
      * @param ids
      * @param showStatus
      * @return
      */
     @RequestMapping(value = "/update/showStatus", method = RequestMethod.POST)
-    public CommonResult updateShowStatus(@RequestParam(value="ids") List<Long> ids,
-                                        @RequestParam(value="showStatus") Integer showStatus) {
+    public CommonResult updateShowStatus(@RequestParam(value = "ids") List<Long> ids,
+                                         @RequestParam(value = "showStatus") Integer showStatus) {
         boolean result = productCategoryService.updateShowStatus(ids, showStatus);
-        if(result){
+        if (result) {
             return CommonResult.success(result);
-        }
-        else {
+        } else {
             return CommonResult.failed();
         }
     }
 
     /**
      * Delete product category
+     *
      * @param id
      * @return
      */
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public CommonResult delete(@PathVariable Long id) {
         boolean result = productCategoryService.removeById(id);
-        if(result){
+        if (result) {
             return CommonResult.success(result);
+        } else {
+            return CommonResult.failed();
         }
-        else {
+    }
+
+    /**
+     * Create product category info
+     *
+     * @param pmsProductCategory
+     * @return
+     */
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    public CommonResult create(@RequestBody PmsProductCategory pmsProductCategory) {
+        boolean result = productCategoryService.save(pmsProductCategory);
+        if (result) {
+            return CommonResult.success(result);
+        } else {
+            return CommonResult.failed();
+        }
+    }
+
+    /**
+     * get product category info by id
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public CommonResult<PmsProductCategory> getById(@PathVariable Long id) {
+        PmsProductCategory pmsProductCategory = productCategoryService.getById(id);
+        return CommonResult.success(pmsProductCategory);
+    }
+
+    /**
+     * Update product category by id
+     * @param pmsProductCategory
+     * @return
+     */
+    @RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
+    public CommonResult update(@RequestBody PmsProductCategory pmsProductCategory) {
+        boolean result = productCategoryService.updateById(pmsProductCategory);
+        if (result) {
+            return CommonResult.success(result);
+        } else {
             return CommonResult.failed();
         }
     }
