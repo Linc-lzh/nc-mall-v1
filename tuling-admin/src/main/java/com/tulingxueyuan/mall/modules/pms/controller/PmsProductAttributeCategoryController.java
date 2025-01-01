@@ -5,9 +5,12 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tulingxueyuan.mall.common.api.CommonPage;
 import com.tulingxueyuan.mall.common.api.CommonResult;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProductAttributeCategory;
+import com.tulingxueyuan.mall.modules.pms.model.dto.ProductAttributeCateDTO;
 import com.tulingxueyuan.mall.modules.pms.service.PmsProductAttributeCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * <p>
@@ -66,6 +69,12 @@ public class PmsProductAttributeCategoryController {
         } else {
             return CommonResult.failed();
         }
+    }
+
+    @RequestMapping(value = "/list/withAttr", method = RequestMethod.GET)
+    public CommonResult getListWithAttr() {
+        List<ProductAttributeCateDTO> list = pmsProductAttributeCategoryService.getListWithAttr();
+        return CommonResult.success(list);
     }
 }
 

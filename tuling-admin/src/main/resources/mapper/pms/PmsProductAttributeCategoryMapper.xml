@@ -10,4 +10,18 @@
         <result column="param_count" property="paramCount" />
     </resultMap>
 
+    <resultMap id="ListWithAttrMap" type="com.tulingxueyuan.mall.modules.pms.model.dto.ProductAttributeCateDTO">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <collection property="productAttributeList" columnPrefix="attr_" resultMap="com.tulingxueyuan.mall.modules.pms.mapper.PmsProductAttributeMapper.BaseResultMap"></collection>
+    </resultMap>
+    <select id="getListWithAttr" resultMap="ListWithAttrMap">
+        select
+            pac.id,
+            pac.name,
+            pa.id as attr_id,
+            pa.name as attr_name
+        from pms_product_attribute_category pac
+        left join pms_product_attribute pa on pac.id = pa.product_attribute_category_id and pa.`type` = 1
+    </select>
 </mapper>

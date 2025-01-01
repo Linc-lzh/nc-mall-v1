@@ -2,6 +2,9 @@ package com.tulingxueyuan.mall.modules.pms.mapper;
 
 import com.tulingxueyuan.mall.modules.pms.model.PmsProductAttributeCategory;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.tulingxueyuan.mall.modules.pms.model.dto.ProductAttributeCateDTO;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface PmsProductAttributeCategoryMapper extends BaseMapper<PmsProductAttributeCategory> {
 
+    List<ProductAttributeCateDTO> getListWithAttr();
 }
