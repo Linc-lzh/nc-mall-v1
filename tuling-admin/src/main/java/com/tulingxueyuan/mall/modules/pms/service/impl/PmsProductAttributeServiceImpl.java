@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProductAttribute;
 import com.tulingxueyuan.mall.modules.pms.mapper.PmsProductAttributeMapper;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProductAttributeCategory;
+import com.tulingxueyuan.mall.modules.pms.model.dto.RelationAttrInfoDTO;
 import com.tulingxueyuan.mall.modules.pms.service.PmsProductAttributeCategoryService;
 import com.tulingxueyuan.mall.modules.pms.service.PmsProductAttributeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -29,6 +30,9 @@ public class PmsProductAttributeServiceImpl extends ServiceImpl<PmsProductAttrib
 
     @Autowired
     PmsProductAttributeCategoryService pmsProductAttributeCategoryService;
+
+    @Autowired
+    PmsProductAttributeMapper productAttributeMapper;
 
     @Override
     public Page list(Long cid, Integer type, Integer pageNum, Integer pageSize) {
@@ -90,5 +94,10 @@ public class PmsProductAttributeServiceImpl extends ServiceImpl<PmsProductAttrib
         }
 
         return length > 0;
+    }
+
+    @Override
+    public List<RelationAttrInfoDTO> getRelationAttrInfoByCid(Long cId) {
+        return productAttributeMapper.getRelationAttrInfoByCid(cId);
     }
 }

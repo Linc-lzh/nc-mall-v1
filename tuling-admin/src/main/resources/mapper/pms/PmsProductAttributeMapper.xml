@@ -18,4 +18,16 @@
         <result column="type" property="type" />
     </resultMap>
 
+    <resultMap id="RelationAttrInfoByCidMap" type="com.tulingxueyuan.mall.modules.pms.model.dto.RelationAttrInfoDTO">
+        <result column="product_attribute_id" property="attributeId" />
+        <result column="product_attribute_category_id" property="attributeCategoryId" />
+    </resultMap>
+    <select id="getRelationAttrInfoByCid" resultMap="RelationAttrInfoByCidMap">
+        SELECT  pcar.product_attribute_id ,
+                pa.product_attribute_category_id
+        from pms_product_category_attribute_relation pcar
+        left join pms_product_attribute pa on pcar.product_attribute_id = pa.id
+        where pcar.product_category_id =#{cId}
+    </select>
+
 </mapper>

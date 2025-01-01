@@ -6,6 +6,7 @@ import com.tulingxueyuan.mall.common.api.CommonPage;
 import com.tulingxueyuan.mall.common.api.CommonResult;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProductAttribute;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProductCategory;
+import com.tulingxueyuan.mall.modules.pms.model.dto.RelationAttrInfoDTO;
 import com.tulingxueyuan.mall.modules.pms.service.PmsProductAttributeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -70,6 +71,12 @@ public class PmsProductAttributeController {
         } else {
             return CommonResult.failed();
         }
+    }
+
+    @RequestMapping(value = "/attrInfo/{cId}", method = RequestMethod.GET)
+    public CommonResult getRelationAttrInfoByCid(@PathVariable Long cId){
+        List<RelationAttrInfoDTO> relationAttrInfoDTOList = pmsProductAttributeService.getRelationAttrInfoByCid(cId);
+        return CommonResult.success(relationAttrInfoDTOList);
     }
 }
 
