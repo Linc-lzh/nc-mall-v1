@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -33,6 +34,8 @@ public class PmsProductCategoryServiceImpl extends ServiceImpl<PmsProductCategor
     @Autowired
     PmsProductCategoryAttributeRelationService relationService;
 
+    @Autowired
+    PmsProductCategoryMapper productCategoryMapper;
     /**
      * Get Product Category List
      *
@@ -107,6 +110,11 @@ public class PmsProductCategoryServiceImpl extends ServiceImpl<PmsProductCategor
         saveAttrRelation(productCategoryDTO, productCategory);
 
         return true;
+    }
+
+    @Override
+    public List<PmsProductCategory> getWithChildren() {
+        return productCategoryMapper.getWithChildren();
     }
 
     private boolean saveAttrRelation(PmsProductCategoryDTO productCategoryDTO, PmsProductCategory productCategory) {

@@ -32,4 +32,6 @@ public interface PmsProductCategoryService extends IService<PmsProductCategory> 
     boolean customSave(PmsProductCategoryDTO pmsProductCategoryDTO);
 
     boolean update(PmsProductCategoryDTO pmsProductCategory);
+
+    List<PmsProductCategory> getWithChildren();
 }

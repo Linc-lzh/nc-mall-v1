@@ -17,5 +17,19 @@
         <result column="keywords" property="keywords" />
         <result column="description" property="description" />
     </resultMap>
-
+    <resultMap id="WithChildrenMap" type="com.tulingxueyuan.mall.modules.pms.model.dto.ProductCateChildrenDTO">
+        <result column="id" property="id" />
+        <result column="name" property="name" />
+        <collection property="children" columnPrefix="children_" resultMap="BaseResultMap"/>
+    </resultMap>
+    <select id="getWithChildren" resultMap="WithChildrenMap">
+        select
+            pc.id,
+            pc.name,
+            pc2.id as children_id,
+            pc2.name as children_name
+        from pms_product_category pc
+        left join pms_product_category pc2 on pc.id = pc2.parent_id and pc2.parent_id <![CDATA[<>]]> 0
+        where pc.parent_id = 0
+    </select>
 </mapper>

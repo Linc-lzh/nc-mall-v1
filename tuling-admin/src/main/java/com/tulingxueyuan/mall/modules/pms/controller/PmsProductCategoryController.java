@@ -98,7 +98,7 @@ public class PmsProductCategoryController {
     /**
      * Create product category info
      *
-     * @param pmsProductCategory
+     * @param PmsProductCategoryDTO
      * @return
      */
     @RequestMapping(value = "/create", method = RequestMethod.POST)
@@ -125,7 +125,7 @@ public class PmsProductCategoryController {
 
     /**
      * Update product category by id
-     * @param pmsProductCategory
+     * @param PmsProductCategoryDTO
      * @return
      */
     @RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
@@ -136,6 +136,12 @@ public class PmsProductCategoryController {
         } else {
             return CommonResult.failed();
         }
+    }
+
+    @RequestMapping(value = "/list/withChildren", method = RequestMethod.GET)
+    public CommonResult getWithChildren() {
+        List<PmsProductCategory> list = productCategoryService.getWithChildren();
+        return CommonResult.success(list);
     }
 }
 
