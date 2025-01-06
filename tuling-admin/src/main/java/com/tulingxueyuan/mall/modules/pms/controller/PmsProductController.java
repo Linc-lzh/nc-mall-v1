@@ -1,8 +1,11 @@
 package com.tulingxueyuan.mall.modules.pms.controller;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.tulingxueyuan.mall.common.api.CommonPage;
 import com.tulingxueyuan.mall.common.api.CommonResult;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProduct;
+import com.tulingxueyuan.mall.modules.pms.model.dto.ProductConditionDTO;
 import com.tulingxueyuan.mall.modules.pms.service.PmsProductService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,11 +31,10 @@ public class PmsProductController {
     @Autowired
     PmsProductService productService;
 
-    @ApiOperation("Product List")
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public CommonResult<List<PmsProduct>> list() {
-        List<PmsProduct> list = productService.list();
-        return CommonResult.success(list);
+    public CommonResult list(ProductConditionDTO condition) {
+        Page page = productService.list(condition);
+        return CommonResult.success(CommonPage.restPage(page));
     }
 }
 
