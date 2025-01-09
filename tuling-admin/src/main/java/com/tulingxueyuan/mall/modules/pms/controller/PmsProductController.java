@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -35,6 +36,17 @@ public class PmsProductController {
     public CommonResult list(ProductConditionDTO condition) {
         Page page = productService.list(condition);
         return CommonResult.success(CommonPage.restPage(page));
+    }
+
+    @RequestMapping(value = "/update/deleteStatus", method = RequestMethod.POST)
+    public CommonResult delete(@RequestParam(value = "ids") List<Long> ids) {
+        boolean result = productService.removeByIds(ids);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else{
+            return CommonResult.failed();
+        }
     }
 }
 
