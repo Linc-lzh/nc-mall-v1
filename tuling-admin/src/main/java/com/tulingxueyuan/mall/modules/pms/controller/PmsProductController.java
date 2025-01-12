@@ -48,5 +48,41 @@ public class PmsProductController {
             return CommonResult.failed();
         }
     }
+
+    @RequestMapping(value = "/update/newStatus", method = RequestMethod.POST)
+    public CommonResult updateNewStatus(@RequestParam(value = "ids") List<Long> ids,
+                                        @RequestParam(value = "newStatus") Integer newStatus) {
+        boolean result = productService.updateStatus(newStatus, ids, PmsProduct::getNewStatus);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else{
+            return CommonResult.failed();
+        }
+    }
+
+    @RequestMapping(value = "/update/recommendStatus", method = RequestMethod.POST)
+    public CommonResult updateRecommendStatus(@RequestParam(value = "ids") List<Long> ids,
+                                        @RequestParam(value = "recommendStatus") Integer recommendStatus) {
+        boolean result = productService.updateStatus(recommendStatus, ids, PmsProduct::getRecommandStatus);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else{
+            return CommonResult.failed();
+        }
+    }
+
+    @RequestMapping(value = "/update/publishStatus", method = RequestMethod.POST)
+    public CommonResult updatePublishStatus(@RequestParam(value = "ids") List<Long> ids,
+                                        @RequestParam(value = "publishStatus") Integer publishStatus) {
+        boolean result = productService.updateStatus(publishStatus, ids, PmsProduct::getPublishStatus);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else{
+            return CommonResult.failed();
+        }
+    }
 }
 

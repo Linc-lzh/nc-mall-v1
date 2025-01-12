@@ -1,9 +1,12 @@
 package com.tulingxueyuan.mall.modules.pms.service;
 
+import com.baomidou.mybatisplus.core.toolkit.support.SFunction;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProduct;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.tulingxueyuan.mall.modules.pms.model.dto.ProductConditionDTO;
+
+import java.util.List;
 
 /**
  * <p>
@@ -16,4 +19,6 @@ import com.tulingxueyuan.mall.modules.pms.model.dto.ProductConditionDTO;
 public interface PmsProductService extends IService<PmsProduct> {
 
     Page list(ProductConditionDTO condition);
+
+    boolean updateStatus(Integer status, List<Long> ids, SFunction<PmsProduct, ?> getStatus);
 }
