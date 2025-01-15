@@ -4,15 +4,23 @@ import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.support.SFunction;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.tulingxueyuan.mall.modules.pms.model.PmsMemberPrice;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProduct;
 import com.tulingxueyuan.mall.modules.pms.mapper.PmsProductMapper;
 import com.tulingxueyuan.mall.modules.pms.model.dto.ProductConditionDTO;
-import com.tulingxueyuan.mall.modules.pms.service.PmsProductService;
+import com.tulingxueyuan.mall.modules.pms.model.dto.ProductSaveParamsDTO;
+import com.tulingxueyuan.mall.modules.pms.service.*;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.List;
 
 /**
@@ -25,6 +33,21 @@ import java.util.List;
  */
 @Service
 public class PmsProductServiceImpl extends ServiceImpl<PmsProductMapper, PmsProduct> implements PmsProductService {
+
+    @Autowired
+    PmsMemberPriceService memberPriceService;
+
+    @Autowired
+    PmsProductLadderService productLadderService;
+
+    @Autowired
+    PmsProductFullReductionService productFullReductionService;
+
+    @Autowired
+    PmsSkuStockService skuStockService;
+
+    @Autowired
+    PmsProductAttributeValueService productAttributeValueService;
 
     @Override
     public Page list(ProductConditionDTO condition) {
@@ -55,7 +78,7 @@ public class PmsProductServiceImpl extends ServiceImpl<PmsProductMapper, PmsProd
         if (condition.getVerifyStatus() != null) {
             lambdaWrapper.eq(PmsProduct::getVerifyStatus, condition.getVerifyStatus());
         }
-
+        lambdaWrapper.orderByAsc(PmsProduct::getSort);
         return this.page(page, lambdaWrapper);
     }
 
@@ -65,5 +88,45 @@ public class PmsProductServiceImpl extends ServiceImpl<PmsProductMapper, PmsProd
         updateWrapper.lambda().set(getStatus, status)
                 .in(PmsProduct::getId, ids);
         return this.update(updateWrapper);
+    }
+
+    @Override
+    @Transactional
+    public boolean create(ProductSaveParamsDTO productSaveParamsDTO) {
+        PmsProduct product = productSaveParamsDTO;
+        product.setId(null);
+        boolean result = this.save(product);
+
+        if (result) {
+            switch (product.getPromotionType()) {
+                case 2:
+                    saveManyList(productSaveParamsDTO.getMemberPriceList(), product.getId(), memberPriceService);
+                    break;
+                case 3:
+                    saveManyList(productSaveParamsDTO.getProductLadderList(), product.getId(), productLadderService);
+                    break;
+                case 4:
+                    saveManyList(productSaveParamsDTO.getProductFullReductionList(), product.getId(), productFullReductionService);
+                    break;
+            }
+
+            saveManyList(productSaveParamsDTO.getSkuStockList(), product.getId(), skuStockService);
+            saveManyList(productSaveParamsDTO.getProductAttributeValueList(), product.getId(), productAttributeValueService);
+        }
+        return result;
+    }
+
+    public void saveManyList(List list, Long productId, IService service) {
+        if (CollectionUtils.isEmpty(list)) return;
+        try {
+            for (Object obj : list) {
+                Method setProductIdMethod = obj.getClass().getMethod("setProductId", Long.class);
+                setProductIdMethod.invoke(obj, productId);
+            }
+
+            service.saveBatch(list);
+        } catch (Exception ex) {
+            throw new RuntimeException(ex);
+        }
     }
 }

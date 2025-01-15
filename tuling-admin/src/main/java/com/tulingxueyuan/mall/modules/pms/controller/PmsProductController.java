@@ -6,14 +6,11 @@ import com.tulingxueyuan.mall.common.api.CommonPage;
 import com.tulingxueyuan.mall.common.api.CommonResult;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProduct;
 import com.tulingxueyuan.mall.modules.pms.model.dto.ProductConditionDTO;
+import com.tulingxueyuan.mall.modules.pms.model.dto.ProductSaveParamsDTO;
 import com.tulingxueyuan.mall.modules.pms.service.PmsProductService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -77,6 +74,17 @@ public class PmsProductController {
     public CommonResult updatePublishStatus(@RequestParam(value = "ids") List<Long> ids,
                                         @RequestParam(value = "publishStatus") Integer publishStatus) {
         boolean result = productService.updateStatus(publishStatus, ids, PmsProduct::getPublishStatus);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else{
+            return CommonResult.failed();
+        }
+    }
+
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    public CommonResult create(@RequestBody ProductSaveParamsDTO productSaveParamsDTO){
+        boolean result = productService.create(productSaveParamsDTO);
         if(result){
             return CommonResult.success(result);
         }

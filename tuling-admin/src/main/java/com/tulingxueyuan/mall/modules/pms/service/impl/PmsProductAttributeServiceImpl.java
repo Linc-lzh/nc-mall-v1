@@ -39,7 +39,8 @@ public class PmsProductAttributeServiceImpl extends ServiceImpl<PmsProductAttrib
         Page page = new Page(pageNum, pageSize);
         QueryWrapper<PmsProductAttribute> queryWrapper = new QueryWrapper<>();
         queryWrapper.lambda().eq(PmsProductAttribute::getProductAttributeCategoryId, cid)
-                .eq(PmsProductAttribute::getType, type);
+                .eq(PmsProductAttribute::getType, type)
+                .orderByAsc(PmsProductAttribute::getSort);
         return this.page(page, queryWrapper);
     }
 

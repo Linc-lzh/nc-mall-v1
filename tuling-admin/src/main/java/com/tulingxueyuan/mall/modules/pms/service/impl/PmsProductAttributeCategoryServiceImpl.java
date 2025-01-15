@@ -10,6 +10,7 @@ import com.tulingxueyuan.mall.modules.pms.service.PmsProductAttributeCategorySer
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import javax.jws.Oneway;
 import java.util.List;
 
 /**
