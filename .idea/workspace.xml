@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add update status methods for product">
-      <change afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/model/dto/ProductSaveParamsDTO.java" afterDir="false" />
+    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add create product methods">
+      <change afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/model/dto/ProductUpdateInitDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/controller/PmsProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/controller/PmsProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductAttributeCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductAttributeCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductAttributeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductAttributeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductCategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-mpbg/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-mpbg/target/classes/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/pms/PmsProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/pms/PmsProductMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +37,12 @@
     &quot;assignee&quot;: &quot;Linc-lzh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Linc-lzh/nc-mall-v1.git",
-    "accountId": "744eae26-58d4-4be9-b50a-6de038f84088"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Linc-lzh/nc-mall-v1.git&quot;,
+    &quot;accountId&quot;: &quot;744eae26-58d4-4be9-b50a-6de038f84088&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -69,13 +67,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.MyBatisPlusGenerator.executor": "Run",
-    "Application.StartApp.executor": "Debug",
+    "Application.StartApp.executor": "Run",
     "Maven.tuling-single-mall [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/linc/Documents/code/nc-mall-v1",
+    "last_opened_file_path": "/home/linc/Documents/code/nc-stock-portfolio",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -84,11 +82,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tulingxueyuan.mall.modules.pms.model.dto" />
       <recent name="com.tulingxueyuan.mall.modules.ums.service" />
       <recent name="com.tulingxueyuan.mall.modules.ums.model" />
       <recent name="com.tulingxueyuan.mall.modules.ums.mapper" />
       <recent name="com.tulingxueyuan.mall.modules.ums.controller" />
-      <recent name="com.tulingxueyuan.mall.modules.pms.model.dto" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -235,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736691667429</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add create product methods">
+      <option name="closed" value="true" />
+      <created>1736954028155</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736954028155</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,14 +265,15 @@
     <MESSAGE value="Add getWithChildren methods" />
     <MESSAGE value="Add logic delete methods for product" />
     <MESSAGE value="Add update status methods for product" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add update status methods for product" />
+    <MESSAGE value="Add create product methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add create product methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductServiceImpl.java</url>
-          <line>97</line>
+          <line>101</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>

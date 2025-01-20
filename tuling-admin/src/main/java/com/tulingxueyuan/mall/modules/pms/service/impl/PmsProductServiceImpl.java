@@ -13,6 +13,7 @@ import com.tulingxueyuan.mall.modules.pms.model.PmsProduct;
 import com.tulingxueyuan.mall.modules.pms.mapper.PmsProductMapper;
 import com.tulingxueyuan.mall.modules.pms.model.dto.ProductConditionDTO;
 import com.tulingxueyuan.mall.modules.pms.model.dto.ProductSaveParamsDTO;
+import com.tulingxueyuan.mall.modules.pms.model.dto.ProductUpdateInitDTO;
 import com.tulingxueyuan.mall.modules.pms.service.*;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,9 @@ import java.util.List;
  */
 @Service
 public class PmsProductServiceImpl extends ServiceImpl<PmsProductMapper, PmsProduct> implements PmsProductService {
+
+    @Autowired
+    PmsProductMapper productMapper;
 
     @Autowired
     PmsMemberPriceService memberPriceService;
@@ -114,6 +118,11 @@ public class PmsProductServiceImpl extends ServiceImpl<PmsProductMapper, PmsProd
             saveManyList(productSaveParamsDTO.getProductAttributeValueList(), product.getId(), productAttributeValueService);
         }
         return result;
+    }
+
+    @Override
+    public ProductUpdateInitDTO getUpdateInfo(Long id) {
+        return productMapper.getUpdateInfo(id);
     }
 
     public void saveManyList(List list, Long productId, IService service) {

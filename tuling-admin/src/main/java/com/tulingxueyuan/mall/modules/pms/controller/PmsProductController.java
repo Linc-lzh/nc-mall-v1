@@ -7,6 +7,7 @@ import com.tulingxueyuan.mall.common.api.CommonResult;
 import com.tulingxueyuan.mall.modules.pms.model.PmsProduct;
 import com.tulingxueyuan.mall.modules.pms.model.dto.ProductConditionDTO;
 import com.tulingxueyuan.mall.modules.pms.model.dto.ProductSaveParamsDTO;
+import com.tulingxueyuan.mall.modules.pms.model.dto.ProductUpdateInitDTO;
 import com.tulingxueyuan.mall.modules.pms.service.PmsProductService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -91,6 +92,12 @@ public class PmsProductController {
         else{
             return CommonResult.failed();
         }
+    }
+
+    @RequestMapping(value = "updateInfo/{id}")
+    public CommonResult getUpdateInfo(@PathVariable Long id){
+        ProductUpdateInitDTO updateInitDTO = productService.getUpdateInfo(id);
+        return CommonResult.success(updateInitDTO);
     }
 }
 
