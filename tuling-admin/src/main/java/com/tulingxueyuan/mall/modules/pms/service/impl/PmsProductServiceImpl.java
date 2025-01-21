@@ -125,11 +125,52 @@ public class PmsProductServiceImpl extends ServiceImpl<PmsProductMapper, PmsProd
         return productMapper.getUpdateInfo(id);
     }
 
+    @Override
+    @Transactional
+    public boolean update(ProductSaveParamsDTO productSaveParamsDTO) {
+        PmsProduct product = productSaveParamsDTO;
+        boolean result = this.updateById(product);
+
+        if (result) {
+            switch (product.getPromotionType()) {
+                case 2:
+                    deleteManyListByProductId(product.getId(), memberPriceService);
+                    saveManyList(productSaveParamsDTO.getMemberPriceList(), product.getId(), memberPriceService);
+                    break;
+                case 3:
+                    deleteManyListByProductId(product.getId(), productLadderService);
+                    saveManyList(productSaveParamsDTO.getProductLadderList(), product.getId(), productLadderService);
+                    break;
+                case 4:
+                    deleteManyListByProductId(product.getId(), productFullReductionService);
+                    saveManyList(productSaveParamsDTO.getProductFullReductionList(), product.getId(), productFullReductionService);
+                    break;
+            }
+
+            deleteManyListByProductId(product.getId(), skuStockService);
+            saveManyList(productSaveParamsDTO.getSkuStockList(), product.getId(), skuStockService);
+
+            deleteManyListByProductId(product.getId(), productAttributeValueService);
+            saveManyList(productSaveParamsDTO.getProductAttributeValueList(), product.getId(), productAttributeValueService);
+        }
+        return result;
+    }
+
+    public void deleteManyListByProductId(Long productId, IService service){
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("product_id", productId);
+        service.remove(queryWrapper);
+    }
+
     public void saveManyList(List list, Long productId, IService service) {
         if (CollectionUtils.isEmpty(list)) return;
         try {
             for (Object obj : list) {
                 Method setProductIdMethod = obj.getClass().getMethod("setProductId", Long.class);
+
+                Method setId = obj.getClass().getMethod("setId", Long.class);
+                setId.invoke(obj, (Long)null);
+
                 setProductIdMethod.invoke(obj, productId);
             }
 

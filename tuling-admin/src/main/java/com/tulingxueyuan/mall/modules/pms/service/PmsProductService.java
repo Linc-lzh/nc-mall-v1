@@ -27,4 +27,6 @@ public interface PmsProductService extends IService<PmsProduct> {
     boolean create(ProductSaveParamsDTO productSaveParamsDTO);
 
     ProductUpdateInitDTO getUpdateInfo(Long id);
+
+    boolean update(ProductSaveParamsDTO productSaveParamsDTO);
 }

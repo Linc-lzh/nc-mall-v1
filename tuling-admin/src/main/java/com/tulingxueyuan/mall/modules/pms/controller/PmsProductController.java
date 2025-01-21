@@ -13,6 +13,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -98,6 +99,17 @@ public class PmsProductController {
     public CommonResult getUpdateInfo(@PathVariable Long id){
         ProductUpdateInitDTO updateInitDTO = productService.getUpdateInfo(id);
         return CommonResult.success(updateInitDTO);
+    }
+
+    @RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
+    public CommonResult update(@RequestBody @Valid ProductSaveParamsDTO productSaveParamsDTO){
+        boolean result = productService.update(productSaveParamsDTO);
+        if(result){
+            return CommonResult.success(result);
+        }
+        else{
+            return CommonResult.failed();
+        }
     }
 }
 

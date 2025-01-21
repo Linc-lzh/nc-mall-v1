@@ -13,6 +13,9 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 /**
  * <p>
  * 商品信息
@@ -31,9 +34,9 @@ public class PmsProduct implements Serializable {
 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
-
+    @NotNull(message = "Product Brand should not be empty")
     private Long brandId;
-
+    @NotNull(message = "Product Categery should not be empty")
     private Long productCategoryId;
 
     private Long feightTemplateId;
@@ -84,6 +87,7 @@ public class PmsProduct implements Serializable {
     private Integer usePointLimit;
 
     @ApiModelProperty(value = "副标题")
+    @NotBlank(message = "Subtitle should not be empty")
     private String subTitle;
 
     @ApiModelProperty(value = "商品描述")
