@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add init product methods">
+    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add update product methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/controller/PmsProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/controller/PmsProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsSkuStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsSkuStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/model/dto/ProductSaveParamsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/model/dto/ProductSaveParamsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/controller/PmsSkuStockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/controller/PmsSkuStockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsSkuStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsSkuStockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsSkuStockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsSkuStockServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737387862319</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add update product methods">
+      <option name="closed" value="true" />
+      <created>1737471420811</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737471420811</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,7 +280,8 @@
     <MESSAGE value="Add update status methods for product" />
     <MESSAGE value="Add create product methods" />
     <MESSAGE value="Add init product methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add init product methods" />
+    <MESSAGE value="Add update product methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add update product methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
