@@ -4,19 +4,101 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add sku list methods">
-      <change afterPath="$PROJECT_DIR$/tuling-portal/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/TulingPortalApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/GlobalCorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/test/java/com/tulingxueyuan/mall/TulingProtalApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add pms product code">
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/dto/HomeMenusDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsAlbumMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsAlbumPicMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsBrandMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsCommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsCommentReplayMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsFeightTemplateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsMemberPriceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductAttributeCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductAttributeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductAttributeValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductCategoryAttributeRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductFullReductionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductLadderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductOperateLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductVertifyRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsSkuStockMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsAlbum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsAlbumPic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsBrand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsCommentReplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsFeightTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsMemberPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductAttributeCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductAttributeValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductCategoryAttributeRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductFullReduction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductLadder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductOperateLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsProductVertifyRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/model/PmsSkuStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsAlbumPicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsAlbumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsBrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsCommentReplayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsCommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsFeightTemplateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsMemberPriceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductAttributeCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductAttributeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductAttributeValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductCategoryAttributeRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductFullReductionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductLadderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductOperateLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductVertifyRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsSkuStockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsAlbumPicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsAlbumServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsBrandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsCommentReplayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsCommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsFeightTemplateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsMemberPriceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductAttributeCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductAttributeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductAttributeValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductCategoryAttributeRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductFullReductionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductLadderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductOperateLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductVertifyRecordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsSkuStockServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsAlbumMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsAlbumPicMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsBrandMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsCommentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsCommentReplayMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsFeightTemplateMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsMemberPriceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductAttributeCategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductAttributeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductAttributeValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductCategoryAttributeRelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductCategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductFullReductionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductLadderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductOperateLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductVertifyRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsSkuStockMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tuling-mpbg/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-mpbg/target/classes/generator.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +163,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/linc/Documents/code/nc-mall-v1/tuling-portal/src/main/java/com/tulingxueyuan/mall",
+    "last_opened_file_path": "/home/linc/Documents/code/nc-mall-v1/tuling-portal/src/main/resources",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -90,7 +172,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tuling-portal/src/main/resources" />
       <recent name="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tulingxueyuan.mall.modules.pms.model.dto" />
@@ -105,7 +191,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.TulingPortalApplication">
+  <component name="RunManager" selected="Application.MyBatisPlusGenerator">
     <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tulingxueyuan.mall.generator.MyBatisPlusGenerator" />
       <module name="tuling-mpbg" />
@@ -147,9 +233,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyBatisPlusGenerator" />
         <item itemvalue="Application.TulingPortalApplication" />
         <item itemvalue="Application.StartApp" />
-        <item itemvalue="Application.MyBatisPlusGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737507307997</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add portal module code">
+      <option name="closed" value="true" />
+      <created>1738670517067</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1738670517067</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,7 +412,9 @@
     <MESSAGE value="Add init product methods" />
     <MESSAGE value="Add update product methods" />
     <MESSAGE value="Add sku list methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sku list methods" />
+    <MESSAGE value="Add portal module code" />
+    <MESSAGE value="Add pms product code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add pms product code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
