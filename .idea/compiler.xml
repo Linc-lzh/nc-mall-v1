@@ -21,6 +21,7 @@
       <module name="tuling-admin" options="-parameters" />
       <module name="tuling-common" options="-parameters" />
       <module name="tuling-mpbg" options="-parameters" />
+      <module name="tuling-portal" options="-parameters" />
       <module name="tuling-test" options="-parameters" />
     </option>
   </component>

@@ -7,6 +7,7 @@
         <module>tuling-common</module>
         <module>tuling-admin</module>
         <module>tuling-mpbg</module>
+        <module>tuling-portal</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

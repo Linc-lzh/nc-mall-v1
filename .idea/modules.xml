@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/tuling-admin/tuling-admin.iml" filepath="$PROJECT_DIR$/tuling-admin/tuling-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/tuling-common/tuling-common.iml" filepath="$PROJECT_DIR$/tuling-common/tuling-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/tuling-mpbg/tuling-mpbg.iml" filepath="$PROJECT_DIR$/tuling-mpbg/tuling-mpbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tuling-single-mall.iml" filepath="$PROJECT_DIR$/tuling-single-mall.iml" />
     </modules>
   </component>
 </project>

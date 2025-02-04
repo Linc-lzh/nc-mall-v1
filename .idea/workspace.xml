@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add update product methods">
+    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add sku list methods">
+      <change afterPath="$PROJECT_DIR$/tuling-portal/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/TulingPortalApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/GlobalCorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/test/java/com/tulingxueyuan/mall/TulingProtalApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/controller/PmsSkuStockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/controller/PmsSkuStockController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsSkuStockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsSkuStockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsSkuStockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsSkuStockServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-mpbg/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-mpbg/target/classes/generator.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +74,14 @@
   "keyToString": {
     "Application.MyBatisPlusGenerator.executor": "Run",
     "Application.StartApp.executor": "Run",
+    "Application.TulingPortalApplication.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.tuling-single-mall [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/linc/Documents/code/nc-stock-portfolio",
+    "last_opened_file_path": "/home/linc/Documents/code/nc-mall-v1/tuling-portal/src/main/java/com/tulingxueyuan/mall",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -78,6 +89,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tulingxueyuan.mall.modules.pms.model.dto" />
       <recent name="com.tulingxueyuan.mall.modules.ums.service" />
@@ -91,7 +105,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.StartApp">
+  <component name="RunManager" selected="Application.TulingPortalApplication">
     <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tulingxueyuan.mall.generator.MyBatisPlusGenerator" />
       <module name="tuling-mpbg" />
@@ -118,8 +132,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TulingPortalApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tulingxueyuan.mall.TulingPortalApplication" />
+      <module name="tuling-portal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tulingxueyuan.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TulingPortalApplication" />
         <item itemvalue="Application.StartApp" />
         <item itemvalue="Application.MyBatisPlusGenerator" />
       </list>
@@ -254,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737471420811</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add sku list methods">
+      <option name="closed" value="true" />
+      <created>1737507307997</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1737507307997</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +317,8 @@
     <MESSAGE value="Add create product methods" />
     <MESSAGE value="Add init product methods" />
     <MESSAGE value="Add update product methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add update product methods" />
+    <MESSAGE value="Add sku list methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sku list methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
