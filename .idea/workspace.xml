@@ -4,78 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add pms product code">
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/dto/HomeGoodsSaleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/dto/HomeMenusBannerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsCouponController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsCouponHistoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsCouponProductCategoryRelationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsCouponProductRelationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsFlashPromotionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsFlashPromotionLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsFlashPromotionProductRelationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsFlashPromotionSessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsHomeAdvertiseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsHomeBrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsHomeNewProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsHomeRecommendProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/controller/SmsHomeRecommendSubjectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsCouponHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsCouponMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsCouponProductCategoryRelationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsCouponProductRelationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsFlashPromotionLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsFlashPromotionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsFlashPromotionProductRelationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsFlashPromotionSessionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsHomeAdvertiseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsHomeBrandMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsHomeNewProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsHomeRecommendProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsHomeRecommendSubjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsCoupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsCouponHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsCouponProductCategoryRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsCouponProductRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsFlashPromotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsFlashPromotionLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsFlashPromotionProductRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsFlashPromotionSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsHomeAdvertise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsHomeBrand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsHomeNewProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsHomeRecommendProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsHomeRecommendSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsCouponHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsCouponProductCategoryRelationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsCouponProductRelationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsCouponService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsFlashPromotionLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsFlashPromotionProductRelationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsFlashPromotionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsFlashPromotionSessionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsHomeAdvertiseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsHomeBrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsHomeNewProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsHomeRecommendProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsHomeRecommendSubjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsCouponHistoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsCouponProductCategoryRelationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsCouponProductRelationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsCouponServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsFlashPromotionLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsFlashPromotionProductRelationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsFlashPromotionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsFlashPromotionSessionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsHomeAdvertiseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsHomeBrandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsHomeNewProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsHomeRecommendProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsHomeRecommendSubjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add sms code">
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsHomeCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsHomeCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsHomeCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsHomeCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/sms/SmsHomeCategoryMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/all.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/all.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-portal/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -139,15 +77,17 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/linc/Documents/code/nc-mall-v1/tuling-portal/src/main/resources",
+    "last_opened_file_path": "/home/linc/Documents/code/nc-mall-v1/tuling-portal/src/main/resources/mapper/sms",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/sms" />
       <recent name="$PROJECT_DIR$/tuling-portal/src/main/resources" />
       <recent name="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall" />
     </key>
@@ -155,11 +95,11 @@
       <recent name="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tulingxueyuan.mall.modules.sms.service.impl" />
+      <recent name="com.tulingxueyuan.mall.modules.sms.service" />
+      <recent name="com.tulingxueyuan.mall.modules.sms.model" />
+      <recent name="com.tulingxueyuan.mall.modules.sms.mapper" />
       <recent name="com.tulingxueyuan.mall.modules.pms.model.dto" />
-      <recent name="com.tulingxueyuan.mall.modules.ums.service" />
-      <recent name="com.tulingxueyuan.mall.modules.ums.model" />
-      <recent name="com.tulingxueyuan.mall.modules.ums.mapper" />
-      <recent name="com.tulingxueyuan.mall.modules.ums.controller" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -368,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738679862689</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add sms code">
+      <option name="closed" value="true" />
+      <created>1738766065835</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1738766065835</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -398,7 +346,8 @@
     <MESSAGE value="Add sku list methods" />
     <MESSAGE value="Add portal module code" />
     <MESSAGE value="Add pms product code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add pms product code" />
+    <MESSAGE value="Add sms code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sms code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
