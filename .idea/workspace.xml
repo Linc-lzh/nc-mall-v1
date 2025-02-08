@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add sms code">
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/mapper/SmsHomeCategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/model/SmsHomeCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/SmsHomeCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/sms/service/impl/SmsHomeCategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/sms/SmsHomeCategoryMapper.xml" afterDir="false" />
+    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add sms home category method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/all.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/all.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/CommonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/CommonPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/IErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/IErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/config/BaseRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/config/BaseRedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/config/BaseSwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/config/BaseSwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/domain/SwaggerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/domain/SwaggerProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/ApiException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/Asserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/Asserts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/service/RedisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/service/impl/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/service/impl/RedisServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738766065835</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add sms home category method">
+      <option name="closed" value="true" />
+      <created>1738942747007</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1738942747007</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -347,7 +360,8 @@
     <MESSAGE value="Add portal module code" />
     <MESSAGE value="Add pms product code" />
     <MESSAGE value="Add sms code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sms code" />
+    <MESSAGE value="Add sms home category method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sms home category method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
