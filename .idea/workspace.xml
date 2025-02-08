@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add sms home category method">
+    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add unknow exception handler">
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/dto/PmsProductAttributeValueDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/dto/ProductDetailDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/CommonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/CommonPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/CommonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/IErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/IErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/api/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/config/BaseRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/config/BaseRedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/config/BaseSwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/config/BaseSwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/domain/SwaggerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/domain/SwaggerProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/ApiException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/Asserts.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/Asserts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/service/impl/RedisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/mapper/PmsProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/PmsProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/pms/service/impl/PmsProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/pms/PmsProductMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -329,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738942747007</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add unknow exception handler">
+      <option name="closed" value="true" />
+      <created>1739022842885</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1739022842885</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,7 +364,8 @@
     <MESSAGE value="Add pms product code" />
     <MESSAGE value="Add sms code" />
     <MESSAGE value="Add sms home category method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sms home category method" />
+    <MESSAGE value="Add unknow exception handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unknow exception handler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
