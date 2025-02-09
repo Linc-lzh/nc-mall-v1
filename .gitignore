@@ -2,4 +2,6 @@
 /tuling-common/target/
 /tuling-admin/target/
 /.idea/
+/.idea/libraries/
 /tuling-portal/target/
+/tuling-security/target/
