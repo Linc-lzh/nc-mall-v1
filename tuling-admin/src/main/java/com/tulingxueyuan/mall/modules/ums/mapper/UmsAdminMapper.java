@@ -11,8 +11,8 @@ import java.util.List;
  * 后台用户表 Mapper 接口
  * </p>
  *
- * @author Linc
- * @since 2024-12-26
+ * @author macro
+ * @since 2020-08-21
  */
 public interface UmsAdminMapper extends BaseMapper<UmsAdmin> {
 

@@ -8,8 +8,8 @@ import com.tulingxueyuan.mall.modules.ums.model.UmsAdminRoleRelation;
  * 后台用户和角色关系表 Mapper 接口
  * </p>
  *
- * @author Linc
- * @since 2024-12-26
+ * @author macro
+ * @since 2020-08-21
  */
 public interface UmsAdminRoleRelationMapper extends BaseMapper<UmsAdminRoleRelation> {
 

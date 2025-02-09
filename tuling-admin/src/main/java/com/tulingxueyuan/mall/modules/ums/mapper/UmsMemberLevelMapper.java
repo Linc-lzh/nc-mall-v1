@@ -8,8 +8,8 @@ import com.tulingxueyuan.mall.modules.ums.model.UmsMemberLevel;
  * 会员等级表 Mapper 接口
  * </p>
  *
- * @author Linc
- * @since 2024-12-26
+ * @author XuShu
+ * @since 2021-03-09
  */
 public interface UmsMemberLevelMapper extends BaseMapper<UmsMemberLevel> {
 

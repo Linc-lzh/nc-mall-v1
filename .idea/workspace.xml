@@ -4,119 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add project detail functions">
-      <change afterPath="$PROJECT_DIR$/tuling-common/src/main/java/com/tulingxueyuan/mall/common/util/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/GlobalWebAppConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/MallSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/config/SpringTaskConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsMemberLevelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsMemberLoginLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsMemberMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsMemberReceiveAddressMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/model/UmsMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/model/UmsMemberLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/model/UmsMemberLoginLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/model/UmsMemberReceiveAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsMemberCacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsMemberLevelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsMemberLoginLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsMemberReceiveAddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsMemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsMemberCacheServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsMemberLevelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsMemberLoginLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsMemberReceiveAddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsMemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/java/domain/MemberDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/ums/UmsMemberLevelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/ums/UmsMemberLoginLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/ums/UmsMemberMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-portal/src/main/resources/mapper/ums/UmsMemberReceiveAddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/TulingSecurityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/IgnoredUrlsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/component/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/component/RestfulAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/component/RestfulAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/component/SecurityResourceRoleSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/component/dynamicSecurity/DynamicAccessDecisionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/component/dynamicSecurity/DynamicSecurityFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/component/dynamicSecurity/DynamicSecurityMetadataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/component/dynamicSecurity/DynamicSecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/src/main/java/com/tulingxueyuan/config/动态资源-README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/TulingSecurityApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/IgnoredUrlsConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/SecurityConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/component/JwtAuthenticationFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/component/RestfulAccessDeniedHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/component/RestfulAuthenticationEntryPoint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/component/SecurityResourceRoleSource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/component/dynamicSecurity/DynamicAccessDecisionManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/component/dynamicSecurity/DynamicSecurityFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/component/dynamicSecurity/DynamicSecurityMetadataSource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/classes/com/tulingxueyuan/mall/security/config/component/dynamicSecurity/DynamicSecurityService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tuling-security/target/tuling-security-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_5_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_54_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_54_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_54_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_54_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_54_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_54_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_3_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_3_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1ec8b60e-4f7a-4094-a829-d273410a3db3" name="Changes" comment="Add login functions">
+      <change afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/config/MallSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/domain/AdminUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-mpbg/target/classes/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-mpbg/target/classes/generator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuling-portal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-portal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/config/GlobalWebAppConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/config/GlobalWebAppConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/controller/UmsAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/controller/UmsAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/dto/UmsAdminLoginParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/dto/UmsAdminLoginParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/dto/UmsAdminParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/dto/UmsAdminParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/dto/UmsMenuNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/dto/UmsMenuNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/dto/UpdateAdminPasswordParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/dto/UpdateAdminPasswordParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsAdminLoginLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsAdminLoginLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsAdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsAdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsAdminRoleRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsAdminRoleRelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsMemberLevelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsMemberLevelMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsResourceCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsResourceCategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsResourceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsResourceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsRoleMenuRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsRoleMenuRelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsRoleResourceRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/mapper/UmsRoleResourceRelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/service/UmsResourceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsAdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsAdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsResourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/java/com/tulingxueyuan/mall/modules/ums/service/impl/UmsResourceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsAdminLoginLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsAdminLoginLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsAdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsAdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsAdminRoleRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsAdminRoleRelationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsMemberLevelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsMemberLevelMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsResourceCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsResourceCategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsResourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsResourceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsRoleMenuRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsRoleMenuRelationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsRoleResourceRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-admin/src/main/resources/mapper/ums/UmsRoleResourceRelationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuling-security/target/tuling-security-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tuling-security/target/tuling-security-0.0.1-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +140,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.TulingPortalApplication">
+  <component name="RunManager" selected="Application.StartApp">
     <configuration name="MyBatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tulingxueyuan.mall.generator.MyBatisPlusGenerator" />
       <module name="tuling-mpbg" />
@@ -258,9 +182,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartApp" />
         <item itemvalue="Application.TulingPortalApplication" />
         <item itemvalue="Application.MyBatisPlusGenerator" />
-        <item itemvalue="Application.StartApp" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739026241911</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add login functions">
+      <option name="closed" value="true" />
+      <created>1739067046560</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1739067046560</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +415,8 @@
     <MESSAGE value="Add sms home category method" />
     <MESSAGE value="Add unknow exception handler" />
     <MESSAGE value="Add project detail functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add project detail functions" />
+    <MESSAGE value="Add login functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add login functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

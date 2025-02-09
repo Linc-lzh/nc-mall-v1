@@ -2,6 +2,7 @@ package com.tulingxueyuan.mall.modules.ums.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.tulingxueyuan.mall.domain.AdminUserDetails;
 import com.tulingxueyuan.mall.modules.ums.dto.UmsAdminParam;
 import com.tulingxueyuan.mall.modules.ums.dto.UpdateAdminPasswordParam;
 import com.tulingxueyuan.mall.modules.ums.model.UmsAdmin;
@@ -76,5 +77,7 @@ public interface UmsAdminService extends IService<UmsAdmin> {
     /**
      * 获取用户信息
      */
-    UmsAdmin loadUserByUsername(String username);
+    AdminUserDetails loadUserByUsername(String username);
+
+    String refreshToken(String token);
 }

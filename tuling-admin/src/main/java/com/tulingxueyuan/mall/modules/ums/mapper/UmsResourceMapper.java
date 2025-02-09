@@ -1,7 +1,7 @@
 package com.tulingxueyuan.mall.modules.ums.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tulingxueyuan.mall.modules.ums.model.UmsResource;
+import com.tulingxueyuan.mall.dto.ResourceRoleDTO;
 import com.tulingxueyuan.mall.modules.ums.model.UmsResource;
 import org.apache.ibatis.annotations.Param;
 
@@ -12,8 +12,8 @@ import java.util.List;
  * 后台资源表 Mapper 接口
  * </p>
  *
- * @author Linc
- * @since 2024-12-26
+ * @author macro
+ * @since 2020-08-21
  */
 public interface UmsResourceMapper extends BaseMapper<UmsResource> {
 
@@ -27,4 +27,5 @@ public interface UmsResourceMapper extends BaseMapper<UmsResource> {
      */
     List<UmsResource> getResourceListByRoleId(@Param("roleId") Long roleId);
 
+    List<ResourceRoleDTO> getAllResourceRole();
 }

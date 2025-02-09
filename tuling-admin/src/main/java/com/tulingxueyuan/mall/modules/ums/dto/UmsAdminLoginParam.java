@@ -8,8 +8,7 @@ import javax.validation.constraints.NotEmpty;
 
 /**
  * 用户登录参数
- * @author Linc
- * @since 2024-12-26
+ * Created by macro on 2018/4/26.
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
