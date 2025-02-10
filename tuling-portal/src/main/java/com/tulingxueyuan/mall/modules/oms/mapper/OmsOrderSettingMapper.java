@@ -8,8 +8,8 @@ import com.tulingxueyuan.mall.modules.oms.model.OmsOrderSetting;
  * 订单设置表 Mapper 接口
  * </p>
  *
- * @author XuShu
- * @since 2021-04-01
+ * @author Linc
+ * @since 2025-02-10
  */
 public interface OmsOrderSettingMapper extends BaseMapper<OmsOrderSetting> {
 

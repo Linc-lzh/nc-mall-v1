@@ -15,8 +15,8 @@ import java.io.Serializable;
  * 订单设置表
  * </p>
  *
- * @author XuShu
- * @since 2021-04-01
+ * @author Linc
+ * @since 2025-02-10
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

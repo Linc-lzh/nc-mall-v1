@@ -11,8 +11,6 @@ import org.springframework.stereotype.Service;
  * 订单设置表 服务实现类
  * </p>
  *
- * @author XuShu
- * @since 2021-04-01
  */
 @Service
 public class OmsOrderSettingServiceImpl extends ServiceImpl<OmsOrderSettingMapper, OmsOrderSetting> implements OmsOrderSettingService {

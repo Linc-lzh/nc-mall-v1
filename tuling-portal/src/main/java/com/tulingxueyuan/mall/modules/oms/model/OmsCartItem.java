@@ -18,8 +18,8 @@ import java.util.Date;
  * 购物车表
  * </p>
  *
- * @author XuShu
- * @since 2021-03-19
+ * @author Linc
+ * @since 2025-02-10
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

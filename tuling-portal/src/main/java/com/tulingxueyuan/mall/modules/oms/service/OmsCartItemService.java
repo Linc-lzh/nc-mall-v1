@@ -12,8 +12,6 @@ import java.util.List;
  * 购物车表 服务类
  * </p>
  *
- * @author XuShu
- * @since 2021-03-19
  */
 public interface OmsCartItemService extends IService<OmsCartItem> {
 

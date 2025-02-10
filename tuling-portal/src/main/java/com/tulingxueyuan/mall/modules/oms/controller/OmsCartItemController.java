@@ -13,8 +13,8 @@ import java.util.Date;
  * 购物车表 前端控制器
  * </p>
  *
- * @author XuShu
- * @since 2021-03-19
+ * @author Linc
+ * @since 2025-02-10
  */
 @RestController
 @RequestMapping("/oms/omsCartItem")

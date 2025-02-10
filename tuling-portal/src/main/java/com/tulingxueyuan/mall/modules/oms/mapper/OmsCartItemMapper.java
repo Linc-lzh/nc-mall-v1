@@ -14,8 +14,8 @@ import java.util.List;
  * 购物车表 Mapper 接口
  * </p>
  *
- * @author XuShu
- * @since 2021-03-19
+ * @author Linc
+ * @since 2025-02-10
  */
 public interface OmsCartItemMapper extends BaseMapper<OmsCartItem> {
 

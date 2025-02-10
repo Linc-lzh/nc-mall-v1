@@ -15,8 +15,6 @@ import java.util.List;
  * 订单表 服务类
  * </p>
  *
- * @author XuShu
- * @since 2021-03-21
  */
 public interface OmsOrderService extends IService<OmsOrder> {
 

@@ -8,8 +8,8 @@ import com.tulingxueyuan.mall.modules.oms.model.OmsOrderItem;
  * 订单中所包含的商品 Mapper 接口
  * </p>
  *
- * @author XuShu
- * @since 2021-03-21
+ * @author Linc
+ * @since 2025-02-10
  */
 public interface OmsOrderItemMapper extends BaseMapper<OmsOrderItem> {
 

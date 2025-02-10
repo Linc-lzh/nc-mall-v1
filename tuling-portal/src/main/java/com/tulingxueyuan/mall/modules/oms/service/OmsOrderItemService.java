@@ -8,8 +8,6 @@ import com.tulingxueyuan.mall.modules.oms.model.OmsOrderItem;
  * 订单中所包含的商品 服务类
  * </p>
  *
- * @author XuShu
- * @since 2021-03-21
  */
 public interface OmsOrderItemService extends IService<OmsOrderItem> {
 

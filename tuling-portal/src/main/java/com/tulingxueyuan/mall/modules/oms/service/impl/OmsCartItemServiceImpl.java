@@ -29,8 +29,6 @@ import java.util.Map;
  * 购物车表 服务实现类
  * </p>
  *
- * @author XuShu
- * @since 2021-03-19
  */
 @Service
 public class OmsCartItemServiceImpl extends ServiceImpl<OmsCartItemMapper, OmsCartItem> implements OmsCartItemService {

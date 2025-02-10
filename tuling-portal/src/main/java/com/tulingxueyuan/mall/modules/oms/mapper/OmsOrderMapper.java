@@ -13,8 +13,8 @@ import org.apache.ibatis.annotations.Param;
  * 订单表 Mapper 接口
  * </p>
  *
- * @author XuShu
- * @since 2021-03-21
+ * @author Linc
+ * @since 2025-02-10
  */
 public interface OmsOrderMapper extends BaseMapper<OmsOrder> {
 
