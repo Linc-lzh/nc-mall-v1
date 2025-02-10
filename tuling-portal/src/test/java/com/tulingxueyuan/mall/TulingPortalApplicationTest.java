@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class TulingProtalApplicationTest
+public class TulingPortalApplicationTest
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class TulingProtalApplicationTest
      *
      * @param testName name of the test case
      */
-    public TulingProtalApplicationTest(String testName )
+    public TulingPortalApplicationTest(String testName )
     {
         super( testName );
     }
@@ -25,7 +25,7 @@ public class TulingProtalApplicationTest
      */
     public static Test suite()
     {
-        return new TestSuite( TulingProtalApplicationTest.class );
+        return new TestSuite( TulingPortalApplicationTest.class );
     }
 
     /**
