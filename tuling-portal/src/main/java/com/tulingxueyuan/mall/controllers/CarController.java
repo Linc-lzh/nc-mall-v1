@@ -30,17 +30,17 @@ public class CarController {
 
     /**
      *  初始化状态栏的购物车商品数量
-     *   this.axios.get('/car/products/sum').then((res=0)=>{
+     *
      */
     @RequestMapping(value="/products/sum",method = RequestMethod.GET)
-    public CommonResult getCarProdutSum(){
+    public CommonResult getCarProductSum(){
         Integer count= cartItemService.getCarProdutSum();
         return CommonResult.success(count);
     }
 
     /**
      * 获取购物数据初始化
-     *  this.axios.get('/car/list')
+     *
      */
     @RequestMapping(value="/list",method = RequestMethod.GET)
     public CommonResult getList(){
@@ -51,10 +51,6 @@ public class CarController {
 
     /**
      *  更新商品数量
-     *  this.axios.post('/car/update/quantity',Qs.stringify({
-     *             id:item.id,
-     *             quantity:item.quantity   当前数量
-     *           }),{headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
      */
     @RequestMapping(value="/update/quantity",method = RequestMethod.POST)
     public CommonResult updateQuantity(
@@ -71,9 +67,6 @@ public class CarController {
 
     /**
      *  删除
-     *  this.axios.post('/car/delete',Qs.stringify({
-     *             ids:item.id
-     *           }),{headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
      */
     @RequestMapping(value="/delete",method = RequestMethod.POST)
     public CommonResult delete(
