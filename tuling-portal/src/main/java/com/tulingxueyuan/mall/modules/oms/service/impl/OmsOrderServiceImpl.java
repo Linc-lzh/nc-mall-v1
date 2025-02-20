@@ -496,7 +496,7 @@ public class OmsOrderServiceImpl extends ServiceImpl<OmsOrderMapper, OmsOrder> i
         //2位平台号码  1.pc  2.app
         //String.format：参数说
         // 0 代表前面补充零
-        // 6 代表补充长度
+        // 2 代表补充长度
         // d 代表正数
         String sourceTyp = String.format("%02d", omsOrder.getSourceType());
         sb.append(sourceTyp);

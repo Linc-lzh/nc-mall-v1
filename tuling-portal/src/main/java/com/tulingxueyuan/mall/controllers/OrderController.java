@@ -68,7 +68,6 @@ public class OrderController {
 
     /**
      *  读取下单成功后的订单详情
-     * this.axios.get(`/order/orderDetail?orderId=${this.orderId}`).then((res)=>{
      */
     @RequestMapping(value="/orderDetail")
     public CommonResult getOrderDetail(@RequestParam("orderId")Long id){

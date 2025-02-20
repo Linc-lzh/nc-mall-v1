@@ -83,7 +83,6 @@ public class TradeServiceImpl implements TradeService {
 
         String qrCodePath=payType==1?aliPayTrade(detail):weichatPayTrade(detail);
 
-
         return StrUtil.isEmpty(qrCodePath)?
                 CommonResult.failed():CommonResult.success(qrCodePath);
     }
